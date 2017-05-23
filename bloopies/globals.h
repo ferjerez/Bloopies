@@ -21,7 +21,7 @@
 #define NUM_PICS 8
 
 // credits marquee
-String marqueeTxt = "Instructions: Push A+DPad to match 3 or more bloops. Score as much as you can, you may get out of time or blocked with no more matchs. Game by Fernando Jerez 2017. Thanks to @crait for the funny name. Version 1. Enjoy!!!";
+String marqueeTxt = "Instructions: Push A+DPad to match 3 or more bloops. Score as much as you can until you get out of time or blocked with no more matchs. Game by Fernando Jerez 2017. Thanks to @crait for the funny name. Version 1. Enjoy!!!";
 int marqueePos = 128;
 int marqueeLength= -6*marqueeTxt.length();
 
@@ -38,6 +38,7 @@ uint16_t score = 0;
 int mult_score = 1;
 int tmp_score = 0;
 uint16_t scoreFrame = 0;
+uint16_t topscore = 0;
 
 String txt[] = {"NICE","GREAT","BIIIG","WOW","OMG!!","WAKA!!!","WHAT??","COME ON"};
 

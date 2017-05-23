@@ -96,6 +96,12 @@ void loop() {
 
         arduboy.setCursor(86, 52);
         arduboy.print(txt[constrain(mult_score - game_level, 0, 7)]);
+      }else{
+        if(score>topscore) topscore = score;
+        arduboy.setCursor(86,44);
+        arduboy.print("Top");
+        arduboy.setCursor(86, 52);
+        arduboy.print(topscore);
       }
 
 
